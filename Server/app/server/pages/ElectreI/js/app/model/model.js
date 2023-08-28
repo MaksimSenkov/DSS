@@ -5,7 +5,6 @@ export default class Model {
 
     #currentSet;
 
-    //TODO: какой из методов использутся? Init не использвуется?????
     async init(setsData) {
         this.#repositorySets = setsData;
 

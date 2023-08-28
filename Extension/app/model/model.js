@@ -104,7 +104,6 @@ export default class Model {
         this.#setFirstSetOfRepositoriesAsCurrent();
     }
 
-    // TODO: Это просто метод для помещения
     // #region TMP
     newLocal() {
         this.#saveToLocalStorage(this.#tmpObj);
@@ -192,8 +191,6 @@ export default class Model {
     }
 
     async #setSetsOfRepositories() {
-        // TODO: Проверить на нул
-        //TODO: Начальное значение при первом запуске.
         let sets = await this.#getRepositorySetsFromLocalStorage();
 
         if (typeof sets === "undefined") {
